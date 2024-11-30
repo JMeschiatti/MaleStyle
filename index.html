@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Site/index.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <title>Bem Vindo ao MALESTYLE</title>
+</head>
+<body>
+    <!-- BARRA MENU -->
+    <div class="header">
+        <button style="animation:animate 1 forwards .9s ease-in-out;" class="menu" onclick="inicio()">Inicio</button>
+        <button style="animation:animate 1 forwards 1.3s ease-in-out;" class="menu" id="produto">Produtos</button>
+        <button style="animation:animate 1 forwards 1.5s ease-in-out;" class="menu" id="sobreNos">Sobre Nós</button>
+    </div>
+    <!-- FINAL BARRA MENU -->
+
+    <!-- BANNER -->
+    <section class="bannerInicio" id="pagBanner">
+        <div class="text">
+            <h3 style="animation:animate 1 forwards .8s ease-in-out;">bem vindo ao</h3>
+            <h1 style="animation:animate 1 forwards .9s ease-in-out;">MALESTYLE</h1>
+            <h5 style="animation:animate 1 forwards 1.1s ease-in-out;">
+                Aqui, você encontra o caminho para se tornar a melhor versão de si mesmo. 
+                Oferecemos cursos, produtos e ferramentas exclusivas para o homem moderno que busca evoluir em estilo, confiança e conquistas. </h5></br>
+            <h5 style="animation:animate 1 forwards 1.3s ease-in-out;">
+                Transforme sua vida com o melhor em perfumes, roupas, acessórios e conhecimento prático para alcançar o sucesso em todas as áreas. 
+                <strong>Seja o líder</strong> da sua própria jornada e comece hoje sua transformação com a Malestyle!</h5></br>
+        </div>
+    </section>
+    <!-- FINAL BANNER -->
+
+    <!-- PRODUTOS -->
+    <section class="produtos" id="pagProdutos">
+        <div class="slideP">
+            <div class="cardP" id="out" style="background-image:url(../Site/IMG\ Prod/outsider.png);">
+                <div class="text">
+                    <h1>outsider</h1>
+                    <h5>Expresse sua personalidade com peças que destacam seu estilo e confiança.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="spo" style="background-image:url(../Site/IMG\ Prod/sport.png);background-position: 40%;">
+                <div class="text">
+                    <h1>sport</h1>
+                    <h5>Roupas projetadas para acompanhar seu ritmo e potencializar seus treinos, para alcançar seus objetivos.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="cas" style="background-image:url(../Site/IMG\ Prod/casual.png);">
+                <div class="text">
+                    <h1>casual</h1>
+                    <h5>Sinta-se bem o dia todo com roupas que oferecem leveza e conforto.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="cal" style="background-image:url(../Site/IMG\ Prod/calçados.png);">
+                <div class="text">
+                    <h1>calçados</h1>
+                    <h5>Descubra o equilíbrio perfeito entre estilo e conforto em cada passo.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="rel" style="background-image:url(../Site/IMG\ Prod/relógio.png);">
+                <div class="text">
+                    <h1>relógios</h1>
+                    <h5>Um acessório que combina praticidade e estilo, adicionando um toque de sofisticação ao visual.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="pul" style="background-image:url(../Site/IMG\ Prod/pulseira.png);">
+                <div class="text">
+                    <h1>pulseiras</h1>
+                    <h5>Peças versáteis que dão personalidade ao look, ideais para quem busca um toque único.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="ane" style="background-image:url(../Site/IMG\ Prod/anéis.png);background-position: 70%;">
+                <div class="text">
+                    <h1>anéis</h1>
+                    <h5>Uma forma de expressar individualidade, variando de designs discretos a ousados.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="ocu" style="background-image:url(../Site/IMG\ Prod/óculos.png);">
+                <div class="text">
+                    <h1>óculos</h1>
+                    <h5>Além de proteger os olhos, são perfeitos para complementar o estilo com diferentes modelos.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="car" style="background-image:url(../Site/IMG\ Prod/carteira.png);">
+                <div class="text">
+                    <h1>carteiras</h1>
+                    <h5>Essenciais para o dia a dia, são práticas e podem ser elegantes, combinando com o visual.</h5>
+                </div>
+            </div>
+            <div class="cardP" id="cha" style="background-image:url(../Site/IMG\ Prod/chapéu.png);">
+                <div class="text">
+                    <h1>chapéus</h1>
+                    <h5>Adicionam um toque de sofisticação ou descontração, ideal para finalizar o look com estilo.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="btnCardsP" id="btnCardsP">
+            <button id="prevP"><i style="margin-left: -120%;" class='bx bx-arrow-back'></i></button>
+            <button id="nextP"><i style="transform:rotate(180deg);margin-left: 120%;" class='bx bx-arrow-back'></i></button>
+        </div>
+    </section>
+    <!-- FINAL PRODUTOS -->
+
+    <!-- TEMAS CURSOS -->
+    <div class="tema" id="outsider">
+        <div class="slideProdutos sO">
+            <div class="item iO"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iO" style="background-image:url(../Site/IMG\ Prod/outsider);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iO"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iO"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iO"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevOut"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextOut"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="sport">
+        <div class="slideProdutos sSp">
+            <div class="item iSp"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iSp" style="background-image:url(../Site/IMG\ Prod/sport);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iSp"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iSp"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iSp"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevSpo"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextSpo"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="casual">
+        <div class="slideProdutos sC">
+            <div class="item iC"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iC" style="background-image:url(../Site/IMG\ Prod/casual);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iC"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iC"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iC"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevCas"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextCas"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="calcados">
+        <div class="slideProdutos sCa">
+            <div class="item iCa"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCa" style="background-image:url(../Site/IMG\ Prod/calçados);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCa"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevCal"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextCal"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="relogios">
+        <div class="slideProdutos sR">
+            <div class="item iR"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iR" style="background-image:url(../Site/IMG\ Prod/relógio);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iR"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iR"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iR"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevRel"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextRel"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="pulseiras">
+        <div class="slideProdutos sP">
+            <div class="item iP"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iP" style="background-image:url(../Site/IMG\ Prod/pulseira);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iP"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iP"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iP"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevPul"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextPul"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="aneis">
+        <div class="slideProdutos sA">
+            <div class="item iA"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iA" style="background-image:url(../Site/IMG\ Prod/anéis);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iA"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iA"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iA"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevAne"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextAne"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="oculos">
+        <div class="slideProdutos sOc">
+            <div class="item iOc"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iOc" style="background-image:url(../Site/IMG\ Prod/óculos);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iOc"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iOc"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iOc"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevOcu"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextOcu"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="carteiras">
+        <div class="slideProdutos sCar">
+            <div class="item iCar"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCar" style="background-image:url(../Site/IMG\ Prod/carteira);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCar"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCar"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCar"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevCar"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextCar"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <div class="tema" id="chapeus">
+        <div class="slideProdutos sCh">
+            <div class="item iCh"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCh" style="background-image:url(../Site/IMG\ Prod/chapéu);"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCh"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCh"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item iCh"> <!---->
+                <div class="text">
+                    <h1>Titulo</h1>
+                    <h4>Descrição</h4>
+                    <div class="btnCur">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnsProdutos">
+            <button id="prevCha"><i class='bx bx-chevron-left'></i></button>
+            <button id="nextCha"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+    <!-- FINAL TEMAS CURSOS -->
+
+    <!-- SOBRE NOS -->
+    <section class="sobreNos" id="pagSobreNos">
+        <div class="text">
+            <h3 style="animation:animate 1 forwards .9s ease-in-out;">Nosso Compromisso com Sua</h3>
+            <h1 style="animation:animate 1 forwards 1s ease-in-out;">Evolução</h1>
+            <h5 style="animation:animate 1 forwards 1.2s ease-in-out;">
+                Acreditamos que todo homem é capaz de superar seus limites e alcançar seu máximo potencial. 
+                Nosso compromisso é fornecer um ambiente completo de desenvolvimento pessoal, com cursos que inspiram, produtos 
+                que elevam o estilo e uma filosofia focada em resultados.</h5></br>
+            <h5 style="animation:animate 1 forwards 1.3s ease-in-out;">
+                Desde fragrâncias marcantes até acessórios que fazem a diferença, nossa missão é transformar homens em líderes de suas vidas. 
+                Com uma abordagem prática e inspiradora, aqui você encontra tudo o que precisa para evoluir continuamente e alcançar o seu melhor.</h5></br>
+        </div>
+        <div class="redeSocial">
+            <div class="btn">
+                <button id="instagram"><i class='bx bxl-instagram'></i><p>Instagram</p></button>
+            </div>
+            <div class="btn">
+                <button id="tiktok"><i class='bx bxl-tiktok'></i><p>TikTok</p></button>
+            </div>
+            <div class="btn">
+                <button id="pinterest"><i class='bx bxl-pinterest-alt' ></i><p>Pinterest</p></button>
+            </div>
+        </div>
+    </section>
+    <!-- FINAL SOBRE NOS -->
+
+    <!-- TRANSAÇÃO -->
+    <div id="transacaoSobreNos"></div>
+    <div id="transacaoProdutos"></div>
+    <!-- FINAL TRANSAÇÃO -->
+
+
+<script src="../Site/index.js"></script>
+</body>
+</html>

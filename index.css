@@ -1,0 +1,1230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../Site/fundo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* STYLE HEADER */
+.header{
+    position: fixed;
+    width: 100%;
+    margin: 1.3% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.header .menu{
+    margin: 0 1.5% 0 1.5%;
+    font-size: .90rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: #eaeaea;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+/* FINAL STYLE HEADER */
+
+/* RESPONSIVIDADE HEADER */
+@media(max-width: 942px){
+    .header .menu{
+        margin: 0 2.5% 0 2.5%;
+    }
+}
+@media(max-width: 823px){    
+    .header .menu{
+        margin: 0 3.5% 0 3.5%;
+    }
+}
+@media(max-width: 497px){    
+    .header .menu{
+        margin: 0 4.5% 0 4.5%;
+    }
+}
+/* FINAL RESPONSIVIDADE HEADER */
+
+/* SECTION BENNER */
+
+/* BENNER INICIO */
+#pagBanner{
+    display: block;
+    transition: .1s ease-in-out .5s;
+}
+.bannerInicio{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+.bannerInicio .text{
+    margin: 20px;
+    width: 40%;
+    font-family: sans-serif;
+    margin: 11% 10%;
+}
+.bannerInicio .text h3{
+    color: #eaeaea;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3vh;
+    font-weight: 400;
+}
+.bannerInicio .text h1{
+    color: #fbbe17;
+    font-size: 8vh;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.bannerInicio .text h5{
+    margin: 0 1.8% 0 0;
+    color: #eaeaea;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+/* FINAL BENNER INICIO */
+
+/* ANIMAÇÃO BANNER */
+@keyframes animate{
+    from{
+        transform: translate(0, -120%);
+        filter: opacity(0);
+    }
+    ro{
+        transform: translate(0);
+        filter: opacity(1);
+    }
+}
+/* FINAL ANIMAÇÃO BANNER */
+
+/* RESPONSIVIDADE BANNER */
+@media(max-width: 994px){
+    .bannerInicio .text{
+        margin: 15% 7%;
+        width: 55%;
+    }
+}
+@media(max-width: 760px){
+    .bannerInicio .text{
+        margin: 20% 7%;
+        width: 68%;
+    }
+}
+@media(max-width: 635px){
+    .bannerInicio .text{
+        margin: 24% 4%;
+        width: 78%;
+    }
+}
+@media(max-width: 511px){
+    .bannerInicio .text{
+        margin: 28% 2%;
+        width: 96%;
+    }
+}
+@media(max-width: 380px){
+    .bannerInicio .text h3{
+        font-size: 2.9vh;
+    }
+    .bannerInicio .text h1{
+        font-size: 7vh;
+    }
+    .bannerInicio .text h5{
+        font-size: 2.5vh;
+    }
+}
+/* FINAL RESPONSIVIDADE */
+
+/* SECTION PRODUTOS ------------------------------------------------------------------------------------------ */
+#outsider{
+    display: none;
+}
+#sport{
+    display: none;
+}
+#casual{
+    display: none;
+}
+#calcados{
+    display: none;
+}
+#relogios{
+    display: none;
+}
+#pagProdutos{
+    display: none;
+    transition: .1s ease-in-out .5s;
+}
+.produtos{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+.produtos .slideP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.produtos .slideP .cardP{
+    position: absolute;
+    margin: 0 0 1.5% 0;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.produtos .slideP .cardP:nth-child(1){
+    top: 28.4%;
+    left: 27.5%;
+    width: 12vw;
+    height: 40vh;
+    opacity: 0;
+    cursor: default;
+    z-index: 0;
+}
+.produtos .slideP .cardP:nth-child(2){
+    top: 20.8%;
+    left: 14%;
+    width: 17.5vw;
+    height: 55vh;
+    filter: saturate(.7);
+    transform: perspective(1000px) rotateY(17deg);
+    cursor: default;
+    z-index: 1;
+}
+.produtos .slideP .cardP:nth-child(3){
+    top: 16%;
+    left: 39.5%;
+    width: 21vw;
+    height: 65vh;
+    z-index: 3;
+    box-shadow: 0 0 50px #807f7f;
+    cursor: pointer;
+}
+.produtos .slideP .cardP:nth-child(4){
+    top: 20.8%;
+    left: 68.5%;
+    width: 17.5vw;
+    height: 55vh;
+    filter: saturate(.7);
+    transform: perspective(1000px) rotateY(-17deg);
+    cursor: default;
+    z-index: 1;
+}
+.produtos .slideP .cardP:nth-child(5){
+    top: 28.4%;
+    left: 60.5%;
+    width: 12vw;
+    height: 40vh;
+    opacity: 0;
+    z-index: 0;
+    cursor: default;
+}
+.produtos .slideP .cardP:nth-child(n + 5){
+    top: 28.4%;
+    left: 60.5%;
+    width: 12vw;
+    height: 40vh;
+    opacity: 0;
+}
+
+.produtos .slideP .cardP .text{
+    position: absolute;
+    border-radius: 2vh;
+    width: 100.3%;
+    height: 100%;
+    color: #eaeaea;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.produtos .slideP .cardP:nth-child(3) .text{
+    display: block;
+}
+.produtos .slideP .cardP .text h1{
+    margin: 80% 0 0 0;
+    font-size: 5vh;
+    text-transform: uppercase;
+    animation: animateTextProdutos 1 forwards 1.2s ease-in-out;
+}
+.produtos .slideP .cardP .text h5{
+    margin: 2% 0 0 0;
+    font-size: 2.3vh;
+    font-weight: 400;
+    animation: animateTextProdutos 1 forwards 1.4s ease-in-out;
+}
+
+.produtos .btnCardsP{
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.produtos .btnCardsP button{
+    margin: 0 12% 0 12%;
+    height: 4vh;
+    width: 4vh;
+    outline: none;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .7s ease-in-out;
+    cursor: pointer;
+}
+.produtos .btnCardsP button i{
+    font-size: 5vh;
+    color: #eaeaea;
+    transition: .7s ease-in-out;
+}.produtos .btnCardsP button:hover i{
+    color: #fbbe17;
+}
+
+/* RESPONSIVIDADE PRODUTOS */
+@media(max-width: 1289px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 38.8%;
+        width: 22vw;
+        height: 65vh;   
+    }
+}
+@media(max-width: 1235px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 50vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 38.3%;
+        width: 23vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 50vh;
+    }
+}
+@media(max-width: 1171px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 49vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 37.8%;
+        width: 24vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 49vh;
+    }
+}
+@media(max-width: 1140px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 49vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 37.1%;
+        width: 25vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 49vh;
+    }
+}
+@media(max-width: 1092px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 45vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 37.1%;
+        width: 26vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 45vh;
+    }
+}
+@media(max-width: 1015px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 35.9%;
+        width: 27.8vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 42vh;
+    }
+}
+@media(max-width: 955px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 17.5vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 35.4%;
+        width: 29.3vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 17.5vw;
+        height: 42vh;
+    }
+}
+@media(max-width: 930px){
+    .cursos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 35.1%;
+        width: 30vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 906px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 34.6%;
+        width: 31vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 875px){
+    .produtos .slideC .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideC .cardP:nth-child(3){
+        left: 34%;
+        width: 32.3vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 844px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 33.5%;
+        width: 33.2vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 819px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 33.1%;
+        width: 34vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 819px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 32.4%;
+        width: 35.4vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 17% 0 17%;
+    
+    }
+}
+@media(max-width: 794px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 14%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 32.4%;
+        width: 35.4vw;
+        height: 65vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 68.5%;
+        width: 18vw;
+        height: 42vh;
+    }
+    .produtos .btnCards button{
+        margin: 0 19% 0 19%;
+    }
+}
+@media(max-width: 769px){
+    .produtos .slideP .cardP:nth-child(2){
+        left: 7.5%;
+        width: 20vw;
+        height: 37vh;
+        opacity: 0;
+    }
+    .produtos .slideP .cardP:nth-child(3){
+        left: 32%;
+        width: 38vw;
+        height: 67vh;   
+    }
+    .produtos .slideP .cardP:nth-child(4){
+        left: 72.4%;
+        width: 20vw;
+        height: 37vh;
+        opacity: 0;
+    }
+}
+@media(max-width: 738px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 31.2%;
+        width: 39.5vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 711px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 30.5%;
+        width: 41.3vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 679px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 29.5%;
+        width: 43vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 653px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 28.5%;
+        width: 45vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 625px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 26.4%;
+        width: 47vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 598px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 26%;
+        width: 48.5vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 578px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 25.5%;
+        width: 50vw;
+        height: 67vh;   
+    }
+}
+@media(max-width: 558px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 24.4%;
+        width: 52vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 541px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 23.5%;
+        width: 54vw;
+        height: 67vh;
+    }
+
+}
+@media(max-width: 521px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 22%;
+        width: 56vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 501px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 21%;
+        width: 58vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 477px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 21%;
+        width: 60vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 459px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 18.5%;
+        width: 63vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 436px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 17.5%;
+        width: 65vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 423px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 16.5%;
+        width: 67vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 409px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 15.5%;
+        width: 69vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 398px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 14.5%;
+        width: 71vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 398px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 13%;
+        width: 74vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 371px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 11%;
+        width: 78vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 352px){
+    .produtos .slideP .cardP:nth-child(3){
+        left: 8%;
+        width: 81vw;
+        height: 67vh;
+    }
+}
+/* FINAL RESPONSIVIDADE PRODUTOS */
+
+/* PAGINA TEMAS */
+#outsider{
+    display: none;
+}
+#sport{
+    display: none;
+}
+#casual{
+    display: none;
+}
+#calcados{
+    display: none;
+}
+#relogios{
+    display: none;
+}
+#pulseiras{
+    display: none;
+}
+#aneis{
+    display: none;
+}
+#oculos{
+    display: none;
+}
+#carteiras{
+    display: none;
+}
+#chapeus{
+    display: none;
+}
+.tema{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.tema .slideProdutos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tema .slideProdutos .item{
+    position: absolute;
+    width: 15%;
+    height: 43%;
+    border-radius: 2vh;
+    box-shadow: 5px 5px 7px #232323;
+    background: red;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+.tema .slideProdutos .item:nth-child(1),
+.tema .slideProdutos .item:nth-child(2){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+    box-shadow: none;
+}
+.tema .slideProdutos .item:nth-child(3){
+    top: 44%;
+    left: 67%;
+    animation: animateCards 1 forwards 1s ease-in-out;
+}
+.tema .slideProdutos .item:nth-child(4){
+    top: 44%;
+    left: 84%;
+    animation: animateCards 1 forwards 1.2s ease-in-out;
+}
+.tema .slideProdutos .item:nth-child(5){
+    top: 44%;
+    left: 101%;
+    animation: animateCards 1 forwards 1.4s ease-in-out;
+}
+.tema .slideProdutos .item:nth-child(6){
+    top: 44%;
+    left: 101%;
+    animation: animateCards 1 forwards 1s ease-in-out;
+}
+
+@keyframes animateCards{
+    from{
+        transform: translate(0, 200%);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0);
+        filter: opacity(1);
+    }
+}
+
+.tema .slideProdutos .item .text{
+    position: absolute;
+    font-family: sans-serif;
+    width: 43%;
+    top: 25%;
+    left: 4%;
+    display: none;
+}
+.tema .slideProdutos .item .text h1{
+    font-family: none;
+    color: #fbbe17;
+    font-size: 6.5vh;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: animateTextProdutos 1 forwards 1.3s ease-in-out;
+}
+.tema .slideProdutos .item .text h4{
+    color: #eaeaea;
+    font-size: 2.5vh;
+    font-weight: 400;
+    animation: animateTextProdutos 1 forwards 1.6s ease-in-out;
+}
+.tema .slideProdutos .item .text .btnCur{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.tema .slideProdutos .item .text .btnCur a{
+    text-decoration: none;
+    margin: 3% 4% 0 0;
+    border-radius: 20px;
+    padding: 2px 15px;
+    color: #232323;
+    font-size: 2.5vh;
+    background: #fbbe17;
+    border: none;
+    outline: none;
+    animation: animateTextProdutos 1 forwards 1.8s ease-in-out;
+}
+.tema .slideProdutos .item:nth-child(2) .text{
+    display: block;
+}
+@keyframes animateTextProdutos{
+    from{
+        transform: translate(0, 150%);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0);
+        filter: opacity(1);
+    }
+}
+
+.tema .btnsProdutos{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tema .btnsProdutos button{
+    margin: 0 2% 0 2%;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.tema .btnsProdutos button i{
+    font-size: 7vh;
+    color: #eaeaea;
+}
+/* FINAL PAGINA TEMAS */
+
+/* RESPONSIVIDADE CURSOS/PRODUTOS */
+@media(max-width: 1167px){
+    .tema .slideProdutos .item{
+        width: 18%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3){
+        top: 44%;
+        left: 62%;
+    }
+    .tema .slideProdutos .item:nth-child(4){
+        top: 44%;
+        left: 81%;
+    }
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        width: 50%;
+    }
+}
+@media(max-width: 1031px){
+    .tema .slideProdutos .item{
+        width: 20%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3){
+        top: 44%;
+        left: 58%;
+    }
+    .tema .slideProdutos .item:nth-child(4){
+        top: 44%;
+        left: 79%;
+    }
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        width: 50%;
+    }
+}
+@media(max-width: 908px){
+    .tema .slideProdutos .item{
+        width: 22%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3){
+        top: 44%;
+        left: 77%;
+    }
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        width: 60%;
+    }
+}
+@media(max-width: 801px){
+    .tema .slideProdutos .item{
+        width: 25.5%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3){
+        top: 44%;
+        left: 73.5%;
+    }
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        width: 64%;
+    }
+}
+@media(max-width: 736px){
+    .tema .slideProdutos .item{
+        width: 28%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3){
+        top: 44%;
+        left: 71%;
+    }
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        width: 64%;
+    }
+}
+@media(max-width: 708px){
+    .tema .slideProdutos .item{
+        width: 28%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3),
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        left: 2%;
+        width: 96%;
+    }
+}
+@media(max-width: 492px){
+    .tema .slideProdutos .item{
+        width: 28%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3),
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        left: 1%;
+        width: 98%;
+    }
+}
+@media(max-width: 492px){
+    .tema .slideProdutos .item{
+        width: 28%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3),
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        top: 20%;
+        left: 1%;
+        width: 98%;
+    }
+}
+/* FINAL RESPONSIVIDADE PRODUTOS */
+
+/* TRANSAÇÃO */
+#transacaoCurso{
+    position: fixed;
+    top: 100%;
+    background: linear-gradient(#fbbe17, #ffd000);
+    width: 100%;
+    height: 140vh;
+    z-index: 10;
+}
+#transacaoProdutos{
+    position: fixed;
+    top: 100%;
+    background: linear-gradient(#fbbe17, #ffd000);
+    width: 100%;
+    height: 140vh;
+    z-index: 10;
+}
+#transacaoSobreNos{
+    position: fixed;
+    top: 100%;
+    background: linear-gradient(#fbbe17, #ffd000);
+    width: 100%;
+    height: 140vh;
+    z-index: 10;
+}
+/* ANIMAÇÃO */
+@keyframes animacaoSubir{
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: -141%;
+    }
+}
+
+/* SOBRE NÓS */
+#pagSobreNos{
+    display: none;
+    transition: .1s ease-in-out .5s;
+}
+.sobreNos{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+.sobreNos .text{
+    margin: 20px;
+    width: 40%;
+    font-family: sans-serif;
+    margin: 11% 10%;
+}
+.sobreNos .text h3{
+    color: #eaeaea;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3vh;
+    font-weight: 400;
+}
+.sobreNos .text h1{
+    color: #fbbe17;
+    font-size: 8vh;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.sobreNos .text h5{
+    margin: 0 1.8% 0 0;
+    color: #eaeaea;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+
+.redeSocial{
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    width: 15%;
+    height: 25vh;
+}
+.redeSocial .btn{
+    margin: 9% 0 9% 0;
+    background: none;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}.redeSocial .btn:hover{
+    background: #fbbe17;
+    box-shadow: 0 0 15px #ffee00;
+    width: 25vh;
+    border-radius: 70px;
+}
+.redeSocial .btn button{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.redeSocial .btn button i{
+    position: absolute;
+    color: #fbbe17;
+    left: 2.2%;
+    font-size: 3.8vh;
+}.redeSocial .btn:hover button i{
+    transition: 1s ease-in-out;
+    color: #232323;
+}
+.redeSocial .btn button p{
+    left: 23%; 
+    font-size: 2.5vh;
+    filter: opacity(0);
+}.redeSocial .btn:hover button p{
+    transition: 1.3s ease-in-out;
+    filter: opacity(1);
+}
+/* FINAL SOBRE NÓS */
+
+/* ANIMAÇÃO SOBRE NÓS */
+@keyframes animate{
+    from{
+        transform: translate(0, 100%);
+        filter: opacity(0);
+    }
+    ro{
+        transform: translate(0);
+        filter: opacity(1);
+    }
+}
+/* FINAL ANIMAÇÃO SOBRE NÓS */
+
+/* RESPONSIVIDADE SOBRE NÓS */
+@media(max-width: 994px){
+    .sobreNos .text{
+        margin: 15% 7%;
+        width: 55%;
+    }
+}
+@media(max-width: 760px){
+    .sobreNos .text{
+        margin: 20% 7%;
+        width: 68%;
+    }
+}
+@media(max-width: 635px){
+    .sobreNos .text{
+        margin: 24% 4%;
+        width: 78%;
+    }
+}
+@media(max-width: 511px){
+    .sobreNos .text{
+        margin: 28% 2%;
+        width: 96%;
+    }
+}
+@media(max-width: 380px){
+    .sobreNos .text h1{
+        font-size: 7vh;
+    }
+    .bannerInicio .text h5{
+        font-size: 2.5vh;
+    }
+}
+/* FINAL RESPONSIVIDADE SOBRE NÓS */
