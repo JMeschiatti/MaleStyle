@@ -19,7 +19,7 @@ body{
 .header{
     position: fixed;
     width: 100%;
-    margin: 5% auto;
+    margin: 1% auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,9 @@ body{
     }
 }
 @media(max-width: 400px){    
+    .header{
+        margin: 5% auto;
+    }
     .header .menu{
         margin: 0 5% 0 5%;
     }
@@ -1280,6 +1283,14 @@ body{
     .sobreNos .text{
         margin: 28% 2%;
         width: 96%;
+    }
+    .redeSocial .btn{
+        margin: 12% 0 12% 0;
+    }
+}
+@media(max-width: 470px){
+    .sobreNos .text{
+        margin: 8% 10%;
     }
 }
 @media(max-width: 380px){
