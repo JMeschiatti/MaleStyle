@@ -19,7 +19,7 @@ body{
 .header{
     position: fixed;
     width: 100%;
-    margin: 1.3% auto;
+    margin: 5% auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,11 @@ body{
 @media(max-width: 497px){    
     .header .menu{
         margin: 0 4.5% 0 4.5%;
+    }
+}
+@media(max-width: 400px){    
+    .header .menu{
+        margin: 0 5% 0 5%;
     }
 }
 /* FINAL RESPONSIVIDADE HEADER */
@@ -145,6 +150,17 @@ body{
     }
     .bannerInicio .text h5{
         font-size: 2.5vh;
+    }
+}
+@media(max-width: 320px){
+    .bannerInicio .text h3{
+        font-size: 2vh;
+    }
+    .bannerInicio .text h1{
+        font-size: 6.1vh;
+    }
+    .bannerInicio .text h5{
+        font-size: 1.6vh;
     }
 }
 /* FINAL RESPONSIVIDADE */
@@ -670,9 +686,13 @@ body{
 }
 @media(max-width: 459px){
     .produtos .slideP .cardP:nth-child(3){
+        top: 12%;
         left: 18.5%;
         width: 63vw;
         height: 67vh;
+    }
+    .produtos .btnCardsP{
+        bottom: 10%;
     }
 }
 @media(max-width: 436px){
@@ -719,8 +739,17 @@ body{
 }
 @media(max-width: 352px){
     .produtos .slideP .cardP:nth-child(3){
+        top: 12%;
         left: 8%;
         width: 81vw;
+        height: 67vh;
+    }
+}
+@media(max-width: 300px){
+    .produtos .slideP .cardP:nth-child(3){
+        top: 12%;
+        left: 5%;
+        width: 90vw;
         height: 67vh;
     }
 }
@@ -1051,6 +1080,38 @@ body{
         width: 98%;
     }
 }
+@media(max-width: 440px){
+    .tema .slideProdutos .item{
+        width: 28%;
+        height: 43%;
+    }
+    .tema .slideProdutos .item:nth-child(3),
+    .tema .slideProdutos .item:nth-child(4),
+    .tema .slideProdutos .item:nth-child(5),
+    .tema .slideProdutos .item:nth-child(6){
+        top: 44%;
+        left: 101%;
+    }
+    .tema .slideProdutos .item .text{
+        top: 20%;
+        left: 1%;
+        width: 98%;
+    }
+    .tema .btnsProdutos{
+        bottom: 10%;
+    }
+}
+@media(max-width: 400px){
+    .tema .slideProdutos .item .text h1{
+        font-size: 6.1vh;
+    }
+    .tema .slideProdutos .item .text h4{
+        font-size: 1.7vh;
+    }
+    .tema .slideProdutos .item .text .btnCur a{
+        font-size: 1.7vh;
+    }
+}
 /* FINAL RESPONSIVIDADE PRODUTOS */
 
 /* TRANSAÇÃO */
@@ -1222,11 +1283,14 @@ body{
     }
 }
 @media(max-width: 380px){
-    .sobreNos .text h1{
-        font-size: 7vh;
+    .sobreNos .text h3{
+        font-size: 2.1vh;
     }
-    .bannerInicio .text h5{
-        font-size: 2.5vh;
+    .sobreNos .text h1{
+        font-size: 6.1vh;
+    }
+    .sobreNos .text h5{
+        font-size: 1.6vh;
     }
 }
 /* FINAL RESPONSIVIDADE SOBRE NÓS */
