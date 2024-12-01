@@ -1308,5 +1308,22 @@ body{
     .sobreNos .text h5{
         font-size: 2.2vh;
     }
+    .redeSocial .btn{
+        margin: 25% 0 25% 0;
+    }
+}
+@media(max-width: 221px){
+    .sobreNos .text{
+        margin: 29% 1%;
+    }
+    .sobreNos .text h3{
+        font-size: 1.9vh;
+    }
+    .sobreNos .text h1{
+        font-size: 4.9vh;
+    }
+    .sobreNos .text h5{
+        font-size: 1.7vh;
+    }
 }
 /* FINAL RESPONSIVIDADE SOBRE NÓS */
