@@ -61,6 +61,12 @@ body{
         margin: 0 5% 0 5%;
     }
 }
+@media(max-width: 255px){    
+    .header .menu{
+        margin: 0 5% 0 5%;
+        font-size: .75rem;
+    }
+}
 /* FINAL RESPONSIVIDADE HEADER */
 
 /* SECTION BENNER */
@@ -164,6 +170,20 @@ body{
     }
     .bannerInicio .text h1{
         font-size: 6.1vh;
+    }
+    .bannerInicio .text h5{
+        font-size: 1.6vh;
+    }
+}
+@media(max-width: 255px){
+    .bannerInicio .text{
+        
+    }
+    .bannerInicio .text h3{
+        font-size: 2vh;
+    }
+    .bannerInicio .text h1{
+        font-size: 5.1vh;
     }
     .bannerInicio .text h5{
         font-size: 1.6vh;
@@ -739,19 +759,12 @@ body{
 @media(max-width: 352px){
     .produtos .slideP .cardP:nth-child(3){
         top: 12%;
-        left: 8%;
-        width: 81vw;
+        left: 1%;
+        width: 98vw;
         height: 67vh;
     }
 }
-@media(max-width: 300px){
-    .produtos .slideP .cardP:nth-child(3){
-        top: 12%;
-        left: 5%;
-        width: 90vw;
-        height: 67vh;
-    }
-}
+
 /* FINAL RESPONSIVIDADE PRODUTOS */
 
 /* PAGINA TEMAS */
