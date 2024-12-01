@@ -176,14 +176,11 @@ body{
     }
 }
 @media(max-width: 255px){
-    .bannerInicio .text{
-        
-    }
     .bannerInicio .text h3{
         font-size: 2vh;
     }
     .bannerInicio .text h1{
-        font-size: 5.1vh;
+        font-size: 4.5vh;
     }
     .bannerInicio .text h5{
         font-size: 1.6vh;
